@@ -61,7 +61,7 @@ export async function middleware(request: NextRequest) {
   // Root admin protection
   if (request.nextUrl.pathname.startsWith('/admin')) {
     if (!user || user.id !== '42228898-9e81-4fcf-96a6-6d4d8b947226') {
-      return NextResponse.redirect(new URL('/', request.url));
+      return NextResponse.redirect(new URL('/login', request.url));
     }
   }
 

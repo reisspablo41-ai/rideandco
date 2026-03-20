@@ -1,6 +1,12 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { supabase } from '@/lib/supabase';
+
+export const metadata: Metadata = {
+  title: 'Our Rentals | Browse All Inflatables & Games',
+  description: 'Explore our full catalog of water slides, bounce houses, mechanical bulls, and party essentials for your DFW Metro event.',
+};
 
 export const dynamic = 'force-dynamic';
 

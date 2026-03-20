@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import { ChevronDown } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Frequently Asked Questions | Party Rental Help',
+  description: 'Find answers to common questions about rentals, delivery, safety, and booking with Ride and Slide Party Co.',
+};
 
 export default function FAQPage() {
   const faqs = [

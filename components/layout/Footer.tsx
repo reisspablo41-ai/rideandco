@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from 'lucide-react';
+import { Facebook, Instagram, Twitter, MapPin, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -36,7 +36,6 @@ export function Footer() {
               <li><Link href="/rentals/bounce-houses" className="hover:text-primary-400 transition-colors">Bounce Houses</Link></li>
               <li><Link href="/rentals/combos" className="hover:text-primary-400 transition-colors">Bounce Combos</Link></li>
               <li><Link href="/rentals/mechanical-bulls" className="hover:text-primary-400 transition-colors">Mechanical Bulls</Link></li>
-              <li><Link href="/rentals/add-ons" className="hover:text-primary-400 transition-colors">Party Add-ons</Link></li>
             </ul>
           </div>
 
@@ -56,12 +55,8 @@ export function Footer() {
             <h3 className="text-white font-heading font-bold text-lg mb-4">Contact Info</h3>
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary-500 shrink-0" />
-                <span className="text-slate-400">(555) 123-4567</span>
-              </li>
-              <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary-500 shrink-0" />
-                <span className="text-slate-400">hello@rideandslidepartyco.com</span>
+                <span className="text-slate-400">Rideandslidepartyco@gmail.com</span>
               </li>
             </ul>
           </div>

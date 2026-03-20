@@ -23,7 +23,6 @@ export function Header() {
 
   const navLinks = [
     { name: 'Rentals', href: '/rentals' },
-    { name: 'Party Add-ons', href: '/rentals/add-ons' },
     { name: 'Safety', href: '/safety/health-guarantee' },
     { name: 'Testimonials', href: '/testimonials' },
     { name: 'About', href: '/about' },

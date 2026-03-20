@@ -1,6 +1,12 @@
 import { Star, Quote } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
 import { CallToAction } from '@/components/sections/CallToAction';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Testimonials | What Our Customers Say',
+  description: 'Read reviews from happy parents, schools, and corporate clients who chose Ride and Slide Party Co for their DFW events.',
+};
 
 export default function TestimonialsPage() {
   const allTestimonials = [

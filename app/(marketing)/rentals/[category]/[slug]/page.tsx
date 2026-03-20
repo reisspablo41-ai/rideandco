@@ -5,6 +5,35 @@ import { Card, CardContent } from '@/components/ui/Card';
 import { Check, Info, ShieldCheck, Ruler, Users, Droplet, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 import { AddToCartButton } from '@/components/cart/AddToCartButton';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ category: string, slug: string }> }): Promise<Metadata> {
+  const { slug: productSlug } = await params;
+  const { data: product } = await supabase
+    .from('products')
+    .select('name, description, image_url')
+    .eq('slug', productSlug)
+    .single();
+
+  if (!product) return {};
+
+  return {
+    title: `${product.name} Rental | Ride and Slide Party Co`,
+    description: product.description || `Rent the ${product.name} for your next event. High-quality, sanitized, and professional setup included.`,
+    openGraph: {
+      title: `${product.name} | Ride and Slide Party Co`,
+      description: product.description,
+      images: [
+        {
+          url: product.image_url || '/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: product.name,
+        },
+      ],
+    },
+  };
+}
 
 export const dynamic = 'force-dynamic';
 

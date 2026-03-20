@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/Button';
-import { Phone, Mail, MessageCircle, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
+import { Mail, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -137,24 +137,6 @@ export default function ContactPage() {
             
             <h3 className="text-3xl font-bold font-heading mb-10 relative z-10">Get in Touch Directly</h3>
             <ul className="space-y-10 relative z-10">
-              <li className="flex items-center gap-6 group cursor-pointer">
-                <div className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                  <Phone className="w-6 h-6 text-primary-400" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-slate-400 mb-1 text-sm uppercase tracking-wider">Call Us</h4>
-                  <p className="text-2xl font-black tracking-tight">(555) 123-4567</p>
-                </div>
-              </li>
-              <li className="flex items-center gap-6 group cursor-pointer">
-                <div className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                  <MessageCircle className="w-6 h-6 text-green-400" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-slate-400 mb-1 text-sm uppercase tracking-wider">WhatsApp</h4>
-                  <a href="https://wa.me/15551234567" className="text-xl font-bold hover:text-green-400 transition-colors">Chat Fast Reply</a>
-                </div>
-              </li>
               <li className="flex items-center gap-6 group cursor-pointer">
                 <div className="w-14 h-14 rounded-full bg-slate-800 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <Mail className="w-6 h-6 text-secondary-400" />

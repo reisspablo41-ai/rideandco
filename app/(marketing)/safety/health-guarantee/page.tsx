@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import { Sparkles, ShieldCheck, CloudLightning } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Health & Safety Guarantee | Clean Inflatables',
+  description: 'Learn about our rigorous cleaning process and safety standards at Ride and Slide Party Co. We prioritize your health and joy.',
+};
 
 export default function HealthGuaranteePage() {
   return (

@@ -1,5 +1,11 @@
+import { Metadata } from 'next';
 import { FileText, Download } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+
+export const metadata: Metadata = {
+  title: 'Insurance Information | Safe Event Rentals',
+  description: 'View our insurance certification and safety protocols. We carry comprehensive liability insurance for all residential and commercial events.',
+};
 
 export default function InsurancePage() {
   return (
