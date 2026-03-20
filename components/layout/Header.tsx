@@ -66,10 +66,19 @@ export function Header() {
               )}
             </button>
             <div className="hidden md:block">
-              <Button className="gap-2 font-bold shadow-lg shadow-primary-500/20" onClick={openCart}>
-                <Calendar className="h-4 w-4" />
-                {totalItems > 0 ? 'Review Rental' : 'Check Availability'}
-              </Button>
+              {totalItems > 0 ? (
+                <Button className="gap-2 font-bold shadow-lg shadow-primary-500/20" onClick={openCart}>
+                  <Calendar className="h-4 w-4" />
+                  Review Rental
+                </Button>
+              ) : (
+                <Link href="/rentals">
+                  <Button className="gap-2 font-bold shadow-lg shadow-primary-500/20">
+                    <Calendar className="h-4 w-4" />
+                    Check Availability
+                  </Button>
+                </Link>
+              )}
             </div>
             
             {/* Mobile menu button */}

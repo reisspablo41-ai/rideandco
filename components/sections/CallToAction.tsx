@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/Button';
+import Link from 'next/link';
 
 export function CallToAction() {
   return (
@@ -10,8 +11,12 @@ export function CallToAction() {
         <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-6 tracking-tight drop-shadow-sm">Ready to Make Memories?</h2>
         <p className="text-xl md:text-2xl text-primary-100 mb-10 max-w-3xl mx-auto font-medium leading-relaxed drop-shadow-sm">Don't wait until the last minute. Our most popular rentals book out weeks in advance. Secure your party date today!</p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <Button size="lg" className="h-16 px-10 text-xl font-bold bg-white text-primary-600 hover:bg-slate-50 border-none shadow-2xl shadow-primary-900/30">Book Your Party Now</Button>
-          <Button size="lg" variant="outline" className="h-16 px-10 text-xl font-bold border-white/40 text-white hover:bg-white/10 hover:border-white transition-all backdrop-blur-sm">Contact Our Team</Button>
+          <Link href="/rentals">
+            <Button size="lg" className="w-full sm:w-auto h-16 px-10 text-xl font-bold bg-white text-primary-600 hover:bg-slate-50 border-none shadow-2xl shadow-primary-900/30">Book Your Party Now</Button>
+          </Link>
+          <Link href="/contact">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto h-16 px-10 text-xl font-bold border-white/40 text-white hover:bg-white/10 hover:border-white transition-all backdrop-blur-sm">Contact Our Team</Button>
+          </Link>
         </div>
       </div>
     </section>

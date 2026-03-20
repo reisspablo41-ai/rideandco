@@ -1,5 +1,6 @@
 import { Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import Link from 'next/link';
 
 export function Hero() {
   return (
@@ -26,13 +27,17 @@ export function Hero() {
             The best inflatables, mechanical bulls, and event essentials in town. Clean, safe, and guaranteed to thrill.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="text-lg gap-2 h-14 px-8">
-              <Calendar className="h-5 w-5" />
-              Check Availability
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg h-14 px-8 border-white/20 text-white hover:bg-white/10 hover:border-white/40">
-              View Rentals
-            </Button>
+            <Link href="/rentals">
+              <Button size="lg" className="w-full sm:w-auto text-lg gap-2 h-14 px-8">
+                <Calendar className="h-5 w-5" />
+                Check Availability
+              </Button>
+            </Link>
+            <Link href="/rentals">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto text-lg h-14 px-8 border-white/20 text-white hover:bg-white/10 hover:border-white/40">
+                View Rentals
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

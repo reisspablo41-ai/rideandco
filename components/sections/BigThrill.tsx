@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/Button';
+import Link from 'next/link';
 
 export function BigThrill() {
   return (
@@ -26,9 +27,11 @@ export function BigThrill() {
               </li>
             </ul>
             <div>
-              <Button size="lg" className="bg-red-600 hover:bg-red-700 focus:ring-red-600 text-white shadow-red-600/20">
-                Book the Bull
-              </Button>
+              <Link href="/rentals/mechanical%20bulls">
+                <Button size="lg" className="bg-red-600 hover:bg-red-700 focus:ring-red-600 text-white shadow-red-600/20">
+                  Book the Bull
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="lg:w-1/2 relative bg-slate-200 min-h-[400px]">
