@@ -33,7 +33,7 @@ export default function AboutPage() {
           </div>
           <div className="md:w-1/2">
             <div className="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white rotate-3 hover:rotate-0 transition-transform duration-500 bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1549488344-c6f9378c2e8c?q=80&w=1000" className="w-full h-[500px] object-cover" alt="Premium Party Rental" />
+              <img src="/premium-about-us.png" className="w-full h-[500px] object-cover" alt="Premium Party Rental" />
             </div>
           </div>
         </section>
@@ -133,7 +133,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="w-full lg:w-5/12 h-96 lg:h-[500px] bg-slate-800 rounded-[2.5rem] flex items-center justify-center text-slate-500 font-bold overflow-hidden shadow-2xl relative z-10 border-4 border-slate-800">
-               <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1000" className="w-full h-full object-cover opacity-70 mix-blend-luminosity hover:mix-blend-normal transition-all duration-1000 hover:scale-105" alt="DFW Metro Map" />
+               <img src="/community-impact.png" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt="Ride and Slide Community Impact" />
             </div>
           </div>
         </section>

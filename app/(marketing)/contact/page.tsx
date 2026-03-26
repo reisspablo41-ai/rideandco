@@ -12,6 +12,8 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
+    email: '',
+    phone: '',
     date: '',
     message: ''
   });
@@ -86,9 +88,34 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <label className="text-sm font-bold text-slate-700 uppercase tracking-wider">Email Address</label>
+                  <input 
+                    required
+                    type="email" 
+                    className="w-full h-14 px-5 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all focus:bg-white text-lg" 
+                    placeholder="john@example.com"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  />
+                </div>
+                <div className="space-y-3">
+                  <label className="text-sm font-bold text-slate-700 uppercase tracking-wider">Phone Number</label>
+                  <input 
+                    required
+                    type="tel" 
+                    className="w-full h-14 px-5 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all focus:bg-white text-lg" 
+                    placeholder="(555) 000-0000"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-3 w-full">
                   <label className="text-sm font-bold text-slate-700 uppercase tracking-wider">Event Date</label>
                   <input 
+                    required
                     type="date" 
                     className="w-full h-14 px-5 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all focus:bg-white text-lg text-slate-700" 
                     value={formData.date}

@@ -27,7 +27,7 @@ export function BigThrill() {
               </li>
             </ul>
             <div>
-              <Link href="/rentals/mechanical%20bulls">
+              <Link href="/rentals/mechanical-bulls">
                 <Button size="lg" className="bg-red-600 hover:bg-red-700 focus:ring-red-600 text-white shadow-red-600/20">
                   Book the Bull
                 </Button>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, Calendar, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { useCart } from '@/hooks/useCart';
@@ -34,10 +35,8 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl font-heading font-black tracking-tighter text-slate-900">
-                Ride<span className="text-primary-500">&</span>Slide
-              </span>
+            <Link href="/" className="flex items-center">
+              <Image src="/logo-slide.png" alt="Ride & Slide Party Co." width={140} height={48} className="h-12 w-auto" priority />
             </Link>
           </div>
           

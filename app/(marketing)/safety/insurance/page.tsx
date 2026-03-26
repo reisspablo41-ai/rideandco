@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import { FileText, Download } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
 
 export const metadata: Metadata = {
   title: 'Insurance Information | Safe Event Rentals',
@@ -23,15 +22,15 @@ export default function InsurancePage() {
           </h3>
           <p className="text-sm text-slate-500 mb-8 font-medium">Planning is the key to safety. Please download and review the safety supervisor guidelines before your event.</p>
           <div className="space-y-4">
-            <Button variant="outline" className="w-full justify-between h-14 bg-white hover:bg-slate-100 hover:text-primary-600 transition-colors border-slate-300">
+            <a href="/pdfs/bounce-house-supervision.pdf" download="Bounce-House-Supervision-Guide.pdf" className="inline-flex items-center justify-between w-full h-14 px-4 rounded-full border-2 border-slate-300 bg-white font-heading font-bold text-slate-700 hover:bg-slate-100 hover:text-primary-600 transition-colors">
               <span className="font-semibold">How to Supervise a Bounce House (PDF)</span> <Download className="w-5 h-5 ml-2 text-primary-500" />
-            </Button>
-            <Button variant="outline" className="w-full justify-between h-14 bg-white hover:bg-slate-100 hover:text-primary-600 transition-colors border-slate-300">
+            </a>
+            <a href="/pdfs/mechanical-bull-rider-rules.pdf" download="Mechanical-Bull-Rider-Rules.pdf" className="inline-flex items-center justify-between w-full h-14 px-4 rounded-full border-2 border-slate-300 bg-white font-heading font-bold text-slate-700 hover:bg-slate-100 hover:text-primary-600 transition-colors">
               <span className="font-semibold">Mechanical Bull Rider Rules (PDF)</span> <Download className="w-5 h-5 ml-2 text-primary-500" />
-            </Button>
-            <Button variant="outline" className="w-full justify-between h-14 bg-white hover:bg-slate-100 hover:text-primary-600 transition-colors border-slate-300">
+            </a>
+            <a href="/pdfs/generator-safety-guidelines.pdf" download="Generator-Safety-Guidelines.pdf" className="inline-flex items-center justify-between w-full h-14 px-4 rounded-full border-2 border-slate-300 bg-white font-heading font-bold text-slate-700 hover:bg-slate-100 hover:text-primary-600 transition-colors">
               <span className="font-semibold">Generator Safety Guidelines (PDF)</span> <Download className="w-5 h-5 ml-2 text-primary-500" />
-            </Button>
+            </a>
           </div>
         </div>
       </div>

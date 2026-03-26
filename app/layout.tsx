@@ -60,6 +60,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${outfit.variable} h-full scroll-smooth`}
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col font-sans">
         {children}

@@ -18,7 +18,7 @@ export function ServiceHighlights() {
       icon: Flame,
       color: 'text-primary-500',
       bg: 'bg-primary-50',
-      href: '/rentals/mechanical%20bulls',
+      href: '/rentals/mechanical-bulls',
     },
     {
       title: 'Concessions',
